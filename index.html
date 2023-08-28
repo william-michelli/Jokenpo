@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: white;">Jokenpo</h1>
+
+    <div class="jogadores">
+        <div class="quadrado jogador">
+            <h2>Jogador 1</h2>
+            <p class="pontos">0 pontos</p>
+            
+            
+            <div class="escolhas">
+                <button class="pedra">
+                    <img src="pedra.png" alt="">
+                </button>
+                <button class="papel">
+                    <img src="papel.png" alt="">
+                </button>
+                <button class="tesoura">
+                    <img src="tesoura.png" alt="">
+                </button>
+            </div>
+            
+            
+            <div class="jogada jogador--jogada">
+                <img class="jogada--img" src="vazio.png" alt="">
+            </div>
+        </div>
+    
+        <div class="quadrado computador">
+            <h2>Computador</h2>
+            <p class="pontosPC">0 pontos</p>
+      
+            <div class="jogada computador--jogada">
+                <img class="jogada-computador--img" src="tesoura.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="quadrado-resultado">
+        <h3>Resultado:</h3>
+        <p id="resultado">Aqui sai o resultado da partida</p>
+    </div>
+    
+    <button class="play">
+        JOGAR
+    </button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
