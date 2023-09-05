@@ -7,51 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style="color: white;">Jokenpo</h1>
+    <div id="tela-jogo">
+        <h1>Jokenpo</h1>
 
-    <div class="jogadores">
-        <div class="quadrado jogador">
-            <h2>Jogador 1</h2>
-            <p class="pontos">0 pontos</p>
-            
-            
-            <div class="escolhas">
-                <button class="pedra">
-                    <img src="pedra.png" alt="">
-                </button>
-                <button class="papel">
-                    <img src="papel.png" alt="">
-                </button>
-                <button class="tesoura">
-                    <img src="tesoura.png" alt="">
-                </button>
+        <div class="jogadores">
+            <div class="quadrado jogador">
+                <h2>Jogador 1</h2>
+                <p class="pontos">0 pontos</p>
+                
+                <div class="escolhas">
+                    <button class="pedra">
+                        <img src="pedra.png" alt="">
+                    </button>
+                    <button class="papel">
+                        <img src="papel.png" alt="">
+                    </button>
+                    <button class="tesoura">
+                        <img src="tesoura.png" alt="">
+                    </button>
+                </div>
+                
+                <div class="jogada jogador--jogada">
+                    <img class="jogada--img" src="vazio.png" alt="">
+                </div>
             </div>
-            
-            
-            <div class="jogada jogador--jogada">
-                <img class="jogada--img" src="vazio.png" alt="">
+        
+
+            <div class="quadrado computador">
+                <h2>Computador</h2>
+                <p class="pontosPC">0 pontos</p>
+          
+                <div class="jogada computador--jogada">
+                    <img class="jogada-computador--img" src="tesoura.png" alt="">
+                </div>
             </div>
         </div>
     
-        <div class="quadrado computador">
-            <h2>Computador</h2>
-            <p class="pontosPC">0 pontos</p>
-      
-            <div class="jogada computador--jogada">
-                <img class="jogada-computador--img" src="tesoura.png" alt="">
-            </div>
+        <div id="quadrado-resultado">
+            <h3>Resultado:</h3>
+            <p id="resultado"></p>
         </div>
-    </div>
-
-    <div id="quadrado-resultado">
-        <h3>Resultado:</h3>
-        <p id="resultado">Aqui sai o resultado da partida</p>
+        
+        <button class="play">
+            JOGAR
+        </button>
     </div>
     
-    <button class="play">
-        JOGAR
-    </button>
-
 
     <script src="script.js"></script>
 </body>
